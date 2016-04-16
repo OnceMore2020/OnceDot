@@ -1,0 +1,8 @@
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias cls='clear'
+alias LS='ls'
+alias CD='cd'
+alias vi='nvim'
+#alias vi='vim'
