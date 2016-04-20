@@ -16,7 +16,11 @@ This repo contains dotfiles of:
 
 ## Prerequisites
 
-Before the installation, at least one of {tmux, zsh, vim, neovim} should be installed. Most of the package manager can do this.
+`git` and `curl` should be installed for fetching remote files, and at least one of the target softwares {tmux, zsh, vim, neovim} should be installed, what's more, `python` should be installed to run the `install.py` script. Most of the package manager can do this, for instance, under ArchLinux
+
+```bash
+$ sudo pacman -S git curl python tmux zsh vim neovim
+```
 
 ## How to install?
 
