@@ -27,7 +27,8 @@ Plug 'junegunn/limelight.vim'
 call plug#end()
 
 " Basics {
-    set nocompatible        " Must be first line
+    set nocompatible
+    set relativenumber
 " }
 
 
@@ -162,6 +163,14 @@ call plug#end()
         " 关闭PyMode的自动补全
         let g:pymode_rope_completion = 0
         let g:pymode_robe_autoimport = 0
+        " 打开doc快捷键K
+        let g:pymode_doc = 1
+        let g:pymode_doc_key = 'K'
+        " 语法检查
+        let g:pymode_lint = 1
+        let g:pymode_lint_checker = 'pyflakes,pep8'
+        let g:pymode_lint_write = 1
+        let g:pymode_folding = 0
     " }
 
     " indent_guides {

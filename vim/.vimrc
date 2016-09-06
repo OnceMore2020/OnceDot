@@ -24,7 +24,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 call plug#end()
 
-set nocompatible        " Must be first line
+set nocompatible
+set relativenumber
 
 " 通用设置 {
     set background=dark
