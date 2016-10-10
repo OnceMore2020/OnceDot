@@ -1,7 +1,7 @@
 NeoVim dotfiles
 =======
 
-# Basic Usage
+## Basic Usage
 
 **Important**: When we talk about `<leader>`, we are actually talking about `,`, which can be tweaked in `.vimrc`.
 
@@ -19,8 +19,6 @@ for general coding:
 |[scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)|Intensely orgasmic commenting|
 |[godlygeek/tabular](https://github.com/godlygeek/tabular)|Text filtering and alignment|
 |[easymotion/vim-easymotion](https://github.com/easymotion/vim-easymotion)|Motion on speed|
-|[Shougo/deoplete.nvim](https://github.com/Shougo/deoplete.nvim)|Auto Completion|
-|[mattn/gist-vim](https://github.com/mattn/gist-vim)|Gist in vim|
 
 for user-friendly visualization:
 
@@ -31,6 +29,7 @@ for user-friendly visualization:
 |[bling/vim-airline](https://github.com/bling/vim-airline)|Status/tabline|
 |[nathanaelkane/vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides)|Visually displaying indent levels|
 |[bronson/vim-trailing-whitespace](https://github.com/bronson/vim-trailing-whitespace)|Highlights trailing whitespace in red and provides :FixWhitespace to fix it.|
+|[Chiel92/vim-autoformat](https://github.com/Chiel92/vim-autoformat)|easy code formatting|
 |[kien/rainbow_parentheses.vim](https://github.com/kien/rainbow_parentheses.vim)|Better Rainbow Parentheses|
 
 for version control:
