@@ -1,12 +1,14 @@
-tmux 配置文件简要说明
-====================
+tmux profile
+============
 
-# 快捷键指南
-配置完成后的正常工作流程是在guake中启动tmux(在某些终端中需要`tmux -2`强制开启256色支持)。
+# Hotkeys
 
-* 横向分屏:Ctrl+A,-
-* 纵向分屏:Ctrl+A,\
-* 调整大小:Ctrl+A,[h,j,k,l]
-* 关闭子窗口:Ctrl+A,q
+Use `tmux -2` to start a tmux session. The *Prefix Key* is `Ctrl+A`.
 
-更多快捷键组合可在`~/.tmux.conf`文件中查找。
+Here's some examples:
+
+* horizontal split: Ctrl+A,-
+* vertical split: Ctrl+A,\
+* scale panel: Ctrl+A,[h,j,k,l]
+* close panel: Ctrl+A,q
+* change session name: Ctrl+A,$
