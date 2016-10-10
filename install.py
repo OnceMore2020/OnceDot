@@ -4,7 +4,7 @@
 import os
 
 def main():
-    install_list = input('Choose the dotfiles you want to install:(e.g. 1,2,4)\n1):tmux 2):zsh 3):vim 4):neovim\n')
+    install_list = input('Choose the dotfiles you want to install:(e.g. 1,2,4)\n1):tmux 2):zsh 3):neovim\n')
     items = install_list.split(',')
     if(len(items)==0):
         print('No item selected!')
@@ -33,21 +33,8 @@ def main():
             print('zsh configuration file created at ~/.zshrc, ~/.zsh_aliases and ~/.oh-my-zsh')
             print('---------------------------------------------------------------------------')
         if item == '3':
-            print('Configuring vim...')
-            os.system('rm -rf ' + home_dir + '/.vim*')
-            print('Installing vim-plug...')
-            os.system('curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
-            #os.system('ln -sf ' + work_dir + '/vim/.plugins ' + home_dir + '/.vimplugins')
-            os.system('vim -u ' + work_dir + '/vim/.plugins +PlugInstall +qall')
-            os.system('ln -sf ' + work_dir + '/vim/.vimrc ' + home_dir + '/.vimrc')
-            os.system('vim -u ' + home_dir + '/.vimrc +PlugUpdate +PlugStatus +qall')
-            print('vim configuration file created at ~/.vim and ~/.vimrc')
-            print('-----------------------------------------------------')
-        if item == '4':
             print('Configuring neovim...')
             os.system('rm -rf ' + home_dir + '/.config/nvim')
-            print('Installing deoplete.vim...')
-            os.system('git clone https://github.com/Shougo/deoplete.nvim.git ' + home_dir + '/.config/nvim')
             print('Installing vim-plug...')
             os.system('curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
             os.system('nvim -u ' + work_dir + '/neovim/.plugins ' + work_dir + '/neovim/.helptext')
