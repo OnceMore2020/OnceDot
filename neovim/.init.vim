@@ -28,6 +28,7 @@ call plug#end()
 " Basics {
     set nocompatible
     set relativenumber
+    set clipboard=unnamed
 " }
 
 
