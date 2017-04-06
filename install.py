@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 
 import os
@@ -8,7 +8,7 @@ VP_REPO = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 
 def main():
-    install_list = raw_input('Choose the dotfiles you want to install: \
+    install_list = input('Choose the dotfiles you want to install: \
                          (e.g. 1,2,4)\n1):tmux 2):zsh 3):neovim\n')
     items = install_list.split(',')
     if len(items) == 0:

@@ -26,7 +26,7 @@ $ sudo pacman -S git curl python tmux zsh neovim
 just run `install.py`, it's interactive, select the dotfiles you want to install ;-)
 
 ```bash
-$ python install.py
+$ python3 install.py
 ```
 
 ## Cautions
